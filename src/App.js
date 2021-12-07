@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './Components/NavBar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+	return (
+		<div className="App">
+			<header className="App-header">
+			{/* In here I want to put a title, a logout button, a search bar which just a simple form (Pokemon)*/}
+			</header>
+			<NavBar />
+			<div>
+			{/* has buttons that render images or more data within the jumbotron related to that topic */}
+			</div>
+			<footer>
+			{/* who made it, when, contact info that when clicked shows a popover of the data above */}
+			</footer>
+		</div>
+	);
 }
 
 export default App;
