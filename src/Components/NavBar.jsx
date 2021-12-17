@@ -86,55 +86,55 @@ const NavBar = (props) =>{
     
     types(pokemon)
     
-    const buttonTypes = () => {
+    // const buttonTypes = () => {
         
-        const bug = bugArr
-        const dark = darkArr
-        const dragon = dragonArr
-        const electric = electricArr
-        const fairy = fairyArr
-        const fighting = fightingArr
-        const fire = fireArr
-        const flying = flyingArr 
-        const ghost = ghostArr
-        const grass = grassArr
-        const ground = groundArr 
-        const ice = iceArr
-        const normal = normalArr 
-        const poison = poisonArr
-        const psychic = psychicArr 
-        const rock = rockArr
-        const steel = steelArr
-        const water = waterArr 
+    //     const bug = bugArr
+    //     const dark = darkArr
+    //     const dragon = dragonArr
+    //     const electric = electricArr
+    //     const fairy = fairyArr
+    //     const fighting = fightingArr
+    //     const fire = fireArr
+    //     const flying = flyingArr 
+    //     const ghost = ghostArr
+    //     const grass = grassArr
+    //     const ground = groundArr 
+    //     const ice = iceArr
+    //     const normal = normalArr 
+    //     const poison = poisonArr
+    //     const psychic = psychicArr 
+    //     const rock = rockArr
+    //     const steel = steelArr
+    //     const water = waterArr 
         
-        var pokemonTypes = [
-            bug,
-            dark,
-            dragon,
-            electric,
-            fairy,
-            fighting,
-            fire,
-            flying,
-            ghost,
-            grass,
-            ground,
-            ice,
-            normal,
-            poison,
-            psychic,
-            rock,
-            steel,
-            water
-        ]
-    }
-    buttonTypes()
+    //     var pokemonTypes = [
+    //         bug,
+    //         dark,
+    //         dragon,
+    //         electric,
+    //         fairy,
+    //         fighting,
+    //         fire,
+    //         flying,
+    //         ghost,
+    //         grass,
+    //         ground,
+    //         ice,
+    //         normal,
+    //         poison,
+    //         psychic,
+    //         rock,
+    //         steel,
+    //         water
+    //     ]
+    // }
+    // buttonTypes()
 
     return(
         <nav>
         {/* many buttons that display one jumbotron in the body that has different data for each button (Pokemon types) */}
             {
-                Object.values(pokemonTypes).map((item, i)=>{
+                Object.values(types).map((item, i)=>{
                     <button>{item}</button>
                 })
             }
